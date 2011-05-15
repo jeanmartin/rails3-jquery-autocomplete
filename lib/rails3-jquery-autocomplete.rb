@@ -14,7 +14,7 @@ end
 #
 begin
   require 'formtastic'
-  class Formtastic::SemanticFormBuilder < Formtastic::FormBuilder
+  class Formtastic::FormBuilder < ActionView::Helpers::FormBuilder
     include Rails3JQueryAutocomplete::FormtasticPlugin
   end
 rescue LoadError
